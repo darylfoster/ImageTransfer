@@ -1,6 +1,5 @@
 ﻿using System.IO.Compression;
 using System.Net.Http.Headers;
-using System.Net.Http.Json;
 using System.Text;
 using System.Text.Json;
 using WebClient.Models;
@@ -14,16 +13,11 @@ public static class ImageTransferWebClient
         string imageFile = args[0];
         string url = args[1];
         var client = new HttpClient();
-        // var response = await client.GetAsync(url);
-        // Console.WriteLine(await response.Content.ReadAsStringAsync());
         var image = new SheetImage
         {
             ImageFormat = Path.GetExtension(imageFile).Replace(".", ""),
             EncodedImage = Convert.ToBase64String(await File.ReadAllBytesAsync(imageFile))
         };
-        // var httpContent = JsonContent.Create(image);
-        // var httpContent = new StringContent(JsonSerializer.Serialize(image));
-        // httpContent.Headers.ContentEncoding.Add("gzip");
         var httpContent = CompressRequestContent(image);
         var postResponse = await client.PostAsync(url, httpContent);
         Console.WriteLine(await postResponse.Content.ReadAsStringAsync());

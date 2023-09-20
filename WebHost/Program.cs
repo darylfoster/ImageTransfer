@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using WebHost.Providers;
 
 namespace WebHost;
 
@@ -24,11 +23,6 @@ public static class ImageTransferWebHost
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
         builder.Services.AddRequestDecompression();
-        // builder.Services.AddRequestDecompression(options =>
-        // {
-        //     ILogger<GZipDecompressionProvider> logger = loggerFactory.CreateLogger<GZipDecompressionProvider>();
-        //     options.DecompressionProviders["gzip"] = new GZipDecompressionProvider(logger);
-        // });
 
         var app = builder.Build();
 
