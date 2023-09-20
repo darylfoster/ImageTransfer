@@ -1,0 +1,10 @@
+**/*.DotSettings.user
+**/*.feature.cs
+**/.idea
+**/.vs
+**/.vscode
+**/bin
+**/debug
+**/obj
+**/code
+**/*.csproj.user

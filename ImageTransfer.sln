@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageTransfer", "ImageTransfer\ImageTransfer.csproj", "{DB224FB3-07A6-45FF-8BCB-3C5DD10E2D8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebHost", "WebHost\WebHost.csproj", "{0F826044-1729-47AB-A313-105D831CBA49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebClient", "WebClient\WebClient.csproj", "{DA82AE2A-DD83-4BAA-AB07-395C8465EB1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB224FB3-07A6-45FF-8BCB-3C5DD10E2D8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB224FB3-07A6-45FF-8BCB-3C5DD10E2D8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB224FB3-07A6-45FF-8BCB-3C5DD10E2D8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB224FB3-07A6-45FF-8BCB-3C5DD10E2D8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F826044-1729-47AB-A313-105D831CBA49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F826044-1729-47AB-A313-105D831CBA49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F826044-1729-47AB-A313-105D831CBA49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F826044-1729-47AB-A313-105D831CBA49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA82AE2A-DD83-4BAA-AB07-395C8465EB1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA82AE2A-DD83-4BAA-AB07-395C8465EB1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA82AE2A-DD83-4BAA-AB07-395C8465EB1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA82AE2A-DD83-4BAA-AB07-395C8465EB1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
